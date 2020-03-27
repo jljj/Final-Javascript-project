@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Javascript</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Final.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title"> Weekly Planner</div>
+        <div class="test-area">
+            <div class="grid-contain1">
+                <div class="class1">
+                    <strong>Notes :  </strong><input class='word' type="word" maxlength="10">
+                </div> 
+                
+                <div class="class2">
+                    Add on to :<br>
+                    <input type="button" class="mon" value="Mon" onclick="monday()">
+                    <input type="button" class="tue" value="Tue" onclick="tuesday()">
+                    <input type="button" class="wed" value="Wed" onclick="wednesday()">
+                    <input type="button" class="thur" value="Thur" onclick="thursday()">
+                    <input type="button" class="fri" value="Fri" onclick="friday()">
+                    <input type="button" class="sat" value="Sat" onclick="saturday()">
+                    <input type="button" class="sun" value="Sun" onclick="sunday()">
+                    <input type="button" class="emu" value="Emu" onclick="emergency()">
+                    <input type="button" class="reset" value="Reset all" onclick="reset()">
+                </div>
+
+                <div class="class3">    
+                    <div id="total-score">
+                        <div>Total Items : </div> 
+                        <div class="items-display"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="grid-contain2">
+<!--------------------------------------------------------------------------->
+            <div id="BoxText1">
+                <div class="text"><center>Monday</center>
+                    Your List:<br></div>
+                    <div class="one-display"></div>
+                    
+            </div>
+<!--------------------------------------------------------------------------->
+            <div id="BoxText2">
+               <div class="text"><center>Tuesday</center>
+                    Your List:<br></div>
+                    <div class="two-display"></div>
+                   
+            </div>
+<!--------------------------------------------------------------------------->
+            <div id="BoxText3">
+                <div class="text"><center>Wednesday</center>
+                    Your List:<br></div>
+                    <div class="three-display"></div>
+                    
+            </div>
+<!--------------------------------------------------------------------------->
+            <div id="BoxText4">
+                <div class="text"><center>Thursday</center>
+                    Your List:<br></div>
+                    <div class="four-display"></div>
+                
+            </div>
+<!--------------------------------------------------------------------------->
+            <div id="BoxText5">
+                <div class="text"><center>Friday</center>
+                    Your List:<br></div>
+                    <div class="five-display"></div>
+                    
+            </div>
+<!--------------------------------------------------------------------------->
+            <div id="BoxText6">
+                <div class="text"><center>Saturday</center>
+                    Your List:<br></div>
+                    <div class="six-display"></div>
+                    
+            </div>
+<!--------------------------------------------------------------------------->
+            <div id="BoxText7">
+                <div class="text"><center>Sunday</center>
+                    Your List:<br></div>
+                    <div class="seven-display"></div>
+                    
+            </div>
+<!--------------------------------------------------------------------------->
+            <div id="BoxText8">
+                <div class="p7"><center>Emmergency</center></div>
+                    <div class="text1">Your List:</div><br>
+                    <div class="eight-display"></div>
+                  
+            </div>
+            
+            <!-- Javascript Here -->
+            <script src="Final.js"></script>
+        </div>
+    </div>
+
+</body>
+</html>

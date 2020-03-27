@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', 'Ubuntu Mono', 'Fira Mono';
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: #b5e3f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: #0b7a9c;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+  background: #006888;
+  }
+  
+  /* Responsive Screen */
+  @media only screen and (max-width: 800px) {
+  
+    .title {
+        font-size: 2em;
+    }
+  
+    .test-area {
+        width: 80vw;
+    }
+  }
+  
+  /* BACKGROUND*/
+  
+  .container {
+    height: 120vh;
+    background-image: url('group.gif');
+    background-size: cover;
+    /* background-position-y: 70%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: -1;
+  }
+  
+  .title {
+    margin-top:60px;
+    margin-bottom:40px;
+    font-size: 3em;
+  }
+  
+  /* JAVASCRIPT TEST AREA */
+  
+  .test-area {
+    width: 60vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 2em;
+    background-color: rgba(218, 216, 216, 0.8);
+    margin: 1em;
+    text-align: left;
+    color: rgb(2, 40, 90);
+    overflow: auto;
+  }
+
+  .grid-contain2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "g1 g2 g3 g4"
+    "g5 g6 g7 g8";
+    padding-left:30px;
+  }
+
+  .grid-contain1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: 
+    "g9 g10 g11";
+  }
+
+  #BoxText1,#BoxText2,#BoxText3,#BoxText4,#BoxText5,#BoxText6,#BoxText7,#BoxText8{
+  border: 2px gray dashed;
+    height:300px;
+    width: 150px;
+    background-color:white;
+    font-size:20px;
+    line-height:1.2em;
+    padding-left: 10px;
+
+  }
+  #BoxText1{
+    grid-area:g1;
+  }
+  #BoxText2{
+    grid-area:g2;
+  }
+  #BoxText3{
+    grid-area:g3;
+  }
+  #BoxText4{
+    grid-area:g4;
+  }
+  #BoxText5{
+    grid-area:g5;
+  }
+  #BoxText6{
+    grid-area:g6;
+  }
+  #BoxText7{
+    grid-area:g7;
+  }
+  #BoxText8{
+    grid-area:g8;
+  }
+  
+
+
+  .word {
+    font-size: 25px;
+    margin: 6px;
+    border: 4px  black;
+    height:40px;
+    width:200px;
+    text-align: center;
+}
+
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    background-color: rgb(223, 223, 223);
+    margin: 3px 0;
+}
+
+.list-item:hover {
+    cursor: pointer;
+}
+
+  #total-score{
+    border: 2px gray dashed;
+    height:40px;
+    width: auto;
+    background-color: white  ;
+    font-size:25px;
+    line-height:1.5em;
+    margin-top:25px;
+    padding-left: 5px;
+    display: flex;
+  }
+
+  .mon,.tue,.wed,.thur,.fri,.sat,.sun,.emu {
+    font-size:15px;
+  }
+
+  .emu {
+    color:red;
+  }
+
+  .class1{
+   grid-area:g9;
+  }
+
+  .class2{
+    grid-area:g10;
+    line-height:1.5em;
+  }
+
+  .class3{
+    grid-area:g11;
+  }
+
+  .box1{
+    font-size:15px;
+  }
+
+  .text{
+   font-size:20px;
+   margin-top: 10px;
+  }
+
+  .text1{
+    font-size:20px;
+  }
+
+    .p7{
+    color: rgb(233, 16, 16);
+    text-align:center;
+    margin-top:10px;
+    font-size: 20px;
+  }
+
+  .buttomdelete{
+    box-align:bottom;
+  }
+
+  .delete{
+    margin-bottom: 1px;
+  }
+
+  .reset{
+    font-size:15px;
+  }
